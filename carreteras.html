@@ -5,54 +5,117 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 *{box-sizing:border-box}
-body{margin:0;padding:2px;font-family:Arial,sans-serif}
+body{margin:0;padding:2px;font-family:Arial,sans-serif;color:#172b3a}
 .card{display:inline-flex;align-items:center;gap:8px;padding:5px 9px;border:1px solid #d7e2e9;border-radius:7px;font-size:12px;color:#172b3a;text-decoration:none;white-space:nowrap}
 #icon{font-size:15px}
+.item{padding:12px;border-bottom:1px solid #d7e2e9}
+small{color:#64748b}
+h2{font-size:18px}
 </style>
 </head>
 <body>
-<a class="card" href="https://cit.transit.gencat.cat/" target="_blank" rel="noopener">
-<strong id="place">AIGUAMÒG</strong>
+
+<a class="card" id="card" target="_blank" rel="noopener">
+<strong>ESTADO DE LAS VÍAS</strong>
 <span id="icon">⚪</span>
 </a>
+
+<section id="report" hidden></section>
+
 <script>
-const names={
-  aiguamog:"AIGUAMÒG",
-  guissona:"GUISSONA",
-  bossost:"BOSSÒST",
-  vilamos:"VILAMÒS",
-  santa:"SANTA MARGARIDA"
-};
+const params=new URLSearchParams(location.search);
+const key=params.get("site")||"aiguamog";
+const detail=params.get("detalle")==="1";
 
-const key=new URLSearchParams(location.search).get("site")||"aiguamog";
-document.getElementById("place").textContent=names[key]||key;
-
-const icon=document.getElementById("icon");
-const card=document.querySelector(".card");
 const roads={
   aiguamog:["L-313a","L-313","C-1412a","C-14","C-1412b","C-13","N-260","C-28"]
 };
 
+const names={
+  aiguamog:"GUISSONA → AIGUAMÒG"
+};
+
+const card=document.getElementById("card");
+const icon=document.getElementById("icon");
+const report=document.getElementById("report");
+
+card.href="?site="+encodeURIComponent(key)+"&detalle=1";
+
+function add(tag,text,parent){
+  const el=document.createElement(tag);
+  el.textContent=text;
+  parent.appendChild(el);
+  return el;
+}
+
 async function actualizar(){
   icon.textContent="⚪";
-  card.title="Sin datos verificados";
+  card.title="Sin datos actualizados";
+
+  if(detail){
+    card.hidden=true;
+    card.style.display="none";
+    report.hidden=false;
+    report.replaceChildren();
+    add("h2",names[key]||"ESTADO DE LAS VÍAS",report);
+  }
+
   try{
     const r=await fetch("https://raw.githubusercontent.com/cinemakalo/rodaje-h2026-clima/main/incidencias.json?t="+Date.now(),{cache:"no-store"});
     if(!r.ok)throw Error();
     const d=await r.json();
+
     const age=Date.now()-Date.parse(d.actualizado);
     const sourceAge=Date.now()-Date.parse(d.fecha_fuente.replace(/ CET$/," +0100").replace(/ CEST$/," +0200"));
-    if(!Number.isFinite(age)||age<0||age>2700000)return;
-    if(!Number.isFinite(sourceAge)||sourceAge<0||sourceAge>2700000)return;
-    if(!roads[key]||!Array.isArray(d.incidencias))return;
 
-    const items=d.incidencias.filter(i=>roads[key].includes(i.via));
-    icon.textContent=items.some(i=>i.estado==="rojo")?"🔴":items.length?"🟡":"🟢";
-    card.title=items.length?items.map(i=>i.titulo+" "+i.descripcion).join("\n"):"Sin incidencias notificadas en las vías consultadas. Accesos locales no verificados.";
+    if(!Number.isFinite(age)||age<0||age>2700000)throw Error();
+    if(!Number.isFinite(sourceAge)||sourceAge<0||sourceAge>2700000)throw Error();
+    if(!roads[key]||!Array.isArray(d.incidencias))throw Error();
+
+    const items=d.incidencias.filter(i=>
+      roads[key].some(v=>v.toUpperCase()===i.via.toUpperCase())
+    );
+
+    items.sort((a,b)=>
+      Number(b.estado==="rojo")-Number(a.estado==="rojo")
+    );
+
+    const status=items.some(i=>i.estado==="rojo")?"🔴":items.length?"🟡":"🟢";
+    icon.textContent=status;
+    card.title="Consultar incidencias";
+
+    if(detail){
+      add("p",status+" "+items.length+" incidencias notificadas",report);
+
+      add("small","Actualización: "+new Date(d.actualizado).toLocaleString("es-ES",{timeZone:"Europe/Madrid"}),report);
+
+      items.forEach(i=>{
+        const box=add("div","",report);
+        box.className="item";
+        add("strong",(i.estado==="rojo"?"🔴 ":"🟡 ")+i.via,box);
+        add("p",i.titulo,box);
+        add("small",i.descripcion,box);
+      });
+
+      if(!items.length){
+        add("p","Sin incidencias notificadas en las vías consultadas.",report);
+      }
+    }
+
   }catch(e){
     icon.textContent="⚪";
+    if(detail)add("p","⚪ Datos no disponibles o desactualizados.",report);
+  }
+
+  if(detail){
+    add("p","Aviso: se consultan carreteras completas. Algunas incidencias pueden quedar fuera del recorrido. Los accesos locales no están verificados. Información actual, no previsión para la fecha de rodaje.",report);
+    const link=add("a","Consultar fuente oficial: Trànsit",report);
+    link.href="https://cit.transit.gencat.cat/";
+    link.target="_blank";
+    link.rel="noopener";
   }
 }
+
 actualizar();
 setInterval(actualizar,60000);
 </script>
