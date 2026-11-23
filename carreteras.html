@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:2px;font-family:Arial,sans-serif}
+.card{display:inline-flex;align-items:center;gap:9px;padding:6px 9px;border:1px solid #d7e2e9;border-radius:7px;font-size:12px;white-space:nowrap;color:#172b3a;text-decoration:none}
+#icon{font-size:16px;color:#64748b}
+</style>
+</head>
+<body>
+<a class="card" href="https://cit.transit.gencat.cat/" target="_blank" rel="noopener" title="Consultar incidencias oficiales">
+<strong id="place">AIGUAMÒG</strong><span id="icon" aria-label="Sin datos verificados">●</span>
+</a>
+<script>
+const names={aiguamog:"AIGUAMÒG",guissona:"GUISSONA",bossost:"BOSSÒST",vilamos:"VILAMÒS",santa:"SANTA MARGARIDA"};
+const key=new URLSearchParams(location.search).get("site")||"aiguamog";
+document.getElementById("place").textContent=names[key]||names.aiguamog;
+</script>
+</body>
+</html>
