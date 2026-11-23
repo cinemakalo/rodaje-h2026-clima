@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clima · Rodaje H2026</title>
+<style>
+:root{font-family:Arial,Helvetica,sans-serif;color:#172b3a;background:transparent}
+*{box-sizing:border-box}body{margin:0;padding:2px}.card{width:100%;max-width:320px;min-height:76px;border:1px solid #d7e2e9;border-radius:9px;padding:9px 11px;background:#fff}.line{display:flex;align-items:center;justify-content:space-between;gap:8px}.line+.line{margin-top:8px}.place{font-weight:700;font-size:12px;white-space:nowrap}.temp{font-weight:700;font-size:14px;white-space:nowrap}.detail{font-size:11px;color:#526675}.status{font-size:11px;color:#526675;margin-top:5px}.error{color:#9b3b2d}.source{font-size:9px;color:#7b8994;margin-top:5px}.source a{color:inherit}
+</style>
+</head>
+<body>
+<div class="card" role="status" aria-live="polite">
+  <div class="line"><span class="place" id="place">GUISSONA · 08 DIC</span><span class="temp" id="temp">— / — °C</span></div>
+  <div class="line"><span class="detail" id="snow">❄ Nieve: — cm</span><span class="detail" id="wind">↗ Viento: — km/h</span></div>
+  <div class="status" id="status">Consultando previsión…</div>
+</div>
+<div class="source">Datos: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></div>
+<script>
+const sites={
+ guissona:{label:'GUISSONA',lat:41.7869,lon:1.2893},
+ aiguamog:{label:'AIGUAMÒG',lat:42.6914289,lon:0.9166963},
+ bossost:{label:'BOSSÒST',lat:42.785,lon:0.692},
+ vilamos:{label:'VILAMÒS',lat:42.747,lon:0.727},
+ santa:{label:'SANTA MARGARIDA',lat:42.72845,lon:0.91672}
+};
+const params=new URLSearchParams(location.search);
+const key=params.get('site')||'guissona';
+const loc=sites[key]||sites.guissona;
+const date=params.get('date')||'2026-12-08';
+const validDate=/^\d{4}-\d{2}-\d{2}$/.test(date)&&!Number.isNaN(Date.parse(date+'T00:00:00Z'));
+const el=id=>document.getElementById(id);
+const displayDate=validDate?new Date(date+'T12:00:00Z').toLocaleDateString('es-ES',{day:'2-digit',month:'short',timeZone:'UTC'}).toUpperCase():'FECHA INVÁLIDA';
+el('place').textContent=loc.label+' · '+displayDate;
+async function load(){
+ if(!validDate){el('status').textContent='Fecha inválida';return;}
+ const url=new URL('https://api.open-meteo.com/v1/forecast');
+ const fields={latitude:loc.lat,longitude:loc.lon,timezone:'Europe/Madrid',forecast_days:16,daily:'temperature_2m_min,temperature_2m_max,snowfall_sum,wind_speed_10m_max'};
+ Object.entries(fields).forEach(([k,v])=>url.searchParams.set(k,String(v)));
+ try{
+  const r=await fetch(url);if(!r.ok)throw new Error('HTTP '+r.status);
+  const j=await r.json();const idx=j.daily?.time?.indexOf(date)??-1;
+  if(idx<0){el('status').textContent='Previsión aún no disponible';return;}
+  const d=j.daily;
+  const fmt=(v,digits=0)=>Number.isFinite(v)?Number(v).toFixed(digits).replace(/\.0$/,''):'—';
+  el('temp').textContent=fmt(d.temperature_2m_min[idx])+'° / '+fmt(d.temperature_2m_max[idx])+' °C';
+  el('snow').textContent='❄ Nieve: '+fmt(d.snowfall_sum[idx],1)+' cm';
+  el('wind').textContent='↗ Viento: '+fmt(d.wind_speed_10m_max[idx])+' km/h';
+  el('status').textContent='Previsión orientativa · '+date;
+ }catch(e){el('status').textContent='No se pudo cargar la previsión';el('status').classList.add('error');}
+}
+load();
+</script>
+</body>
+</html>
