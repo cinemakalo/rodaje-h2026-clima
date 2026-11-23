@@ -6,18 +6,53 @@
 <style>
 *{box-sizing:border-box}
 body{margin:0;padding:2px;font-family:Arial,sans-serif}
-.card{display:inline-flex;align-items:center;gap:9px;padding:6px 9px;border:1px solid #d7e2e9;border-radius:7px;font-size:12px;white-space:nowrap;color:#172b3a;text-decoration:none}
-#icon{font-size:16px;color:#64748b}
+.card{display:inline-flex;align-items:center;gap:8px;padding:5px 9px;border:1px solid #d7e2e9;border-radius:7px;font-size:12px;color:#172b3a;text-decoration:none;white-space:nowrap}
+#icon{font-size:15px}
 </style>
 </head>
 <body>
-<a class="card" href="https://cit.transit.gencat.cat/" target="_blank" rel="noopener" title="Consultar incidencias oficiales">
-<strong id="place">AIGUAMÒG</strong><span id="icon" aria-label="Sin datos verificados">●</span>
+<a class="card" href="https://cit.transit.gencat.cat/" target="_blank" rel="noopener">
+<strong id="place">AIGUAMÒG</strong>
+<span id="icon">⚪</span>
 </a>
 <script>
-const names={aiguamog:"AIGUAMÒG",guissona:"GUISSONA",bossost:"BOSSÒST",vilamos:"VILAMÒS",santa:"SANTA MARGARIDA"};
+const names={
+  aiguamog:"AIGUAMÒG",
+  guissona:"GUISSONA",
+  bossost:"BOSSÒST",
+  vilamos:"VILAMÒS",
+  santa:"SANTA MARGARIDA"
+};
+
 const key=new URLSearchParams(location.search).get("site")||"aiguamog";
-document.getElementById("place").textContent=names[key]||names.aiguamog;
+document.getElementById("place").textContent=names[key]||key;
+
+const icon=document.getElementById("icon");
+const card=document.querySelector(".card");
+const roads={aiguamog:["N-230","C-28"]};
+
+async function actualizar(){
+  icon.textContent="⚪";
+  card.title="Sin datos verificados";
+  try{
+    const r=await fetch("https://raw.githubusercontent.com/cinemakalo/rodaje-h2026-clima/main/incidencias.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok)throw Error();
+    const d=await r.json();
+    const age=Date.now()-Date.parse(d.actualizado);
+    const sourceAge=Date.now()-Date.parse(d.fecha_fuente.replace(/ CET$/," +0100").replace(/ CEST$/," +0200"));
+    if(!Number.isFinite(age)||age<0||age>2700000)return;
+    if(!Number.isFinite(sourceAge)||sourceAge<0||sourceAge>2700000)return;
+    if(!roads[key]||!Array.isArray(d.incidencias))return;
+
+    const items=d.incidencias.filter(i=>roads[key].includes(i.via));
+    icon.textContent=items.some(i=>i.estado==="rojo")?"🔴":items.length?"🟡":"🟢";
+    card.title=items.length?items.map(i=>i.titulo+" "+i.descripcion).join("\n"):"Sin incidencias notificadas en las vías consultadas. Accesos locales no verificados.";
+  }catch(e){
+    icon.textContent="⚪";
+  }
+}
+actualizar();
+setInterval(actualizar,60000);
 </script>
 </body>
 </html>
