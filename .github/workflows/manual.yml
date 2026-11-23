@@ -5,21 +5,64 @@ on:
   schedule:
     - cron: '7,22,37,52 * * * *'
 
+permissions:
+  contents: write
+
+concurrency:
+  group: incidencias
+  cancel-in-progress: false
+
 jobs:
-  comprobar:
+  actualizar:
     runs-on: ubuntu-latest
     steps:
-      - name: Consultar datos oficiales
+      - uses: actions/checkout@v4
+
+      - name: Descargar y procesar incidencias
         run: |
-          curl -fL --max-time 60 "https://www.gencat.cat/transit/opendata/incidenciesRSS.xml" -o incidencias.xml
+          curl -fL --max-time 60 "https://www.gencat.cat/transit/opendata/incidenciesRSS.xml" -o /tmp/incidencias.xml
           python3 - <<'PY'
           import xml.etree.ElementTree as ET
-          root = ET.parse("incidencias.xml").getroot()
-          assert root.tag == "rss"
-          for item in root.findall("./channel/item"):
-              title = item.findtext("title", "")
-              desc = item.findtext("description", "")
-              road = desc.split("|")[0].strip()
-              if road in ["C-28", "N-230", "C-142b"]:
-                  print(title, "|", desc)
+          import json
+          from datetime import datetime, timezone
+
+          root = ET.parse("/tmp/incidencias.xml").getroot()
+          channel = root.find("channel")
+          assert root.tag == "rss" and channel is not None
+          fecha = channel.findtext("pubDate")
+          assert fecha
+
+          datos = {
+              "actualizado": datetime.now(timezone.utc).isoformat(),
+              "fecha_fuente": fecha,
+              "incidencias": []
+          }
+
+          for item in channel.findall("item"):
+              titulo = item.findtext("title", "")
+              descripcion = item.findtext("description", "")
+              via = descripcion.split("|")[0].strip()
+
+              if "tallada" in titulo.lower():
+                  estado = "rojo"
+              else:
+                  estado = "amarillo"
+
+              datos["incidencias"].append({
+                  "via": via,
+                  "titulo": titulo,
+                  "descripcion": descripcion,
+                  "estado": estado
+              })
+
+          with open("incidencias.json", "w", encoding="utf-8") as f:
+              json.dump(datos, f, ensure_ascii=False, indent=2)
           PY
+
+      - name: Publicar datos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add incidencias.json
+          git diff --cached --quiet || git commit -m "Actualizar incidencias"
+          git push
