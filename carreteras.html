@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,9 +12,8 @@ body{margin:0;padding:2px;font-family:Arial,sans-serif;color:#172b3a}
 .item{padding:7px 4px;border-bottom:1px solid #d7e2e9;font-size:13px}
 .item p{margin:4px 0;font-size:12px}
 .item small{font-size:11px;line-height:1.3}
-h2{margin:8px 0}
+h2{margin:8px 0;font-size:18px}
 small{color:#64748b}
-h2{font-size:18px}
 </style>
 </head>
 <body>
@@ -64,82 +64,101 @@ async function actualizar(){
   }
 
   try{
-    const r=await fetch("https://raw.githubusercontent.com/cinemakalo/rodaje-h2026-clima/main/incidencias.json?t="+Date.now(),{cache:"no-store"});
+    const r=await fetch(
+      "https://raw.githubusercontent.com/cinemakalo/rodaje-h2026-clima/main/incidencias.json?t="+Date.now(),
+      {cache:"no-store"}
+    );
+
     if(!r.ok)throw Error();
+
     const d=await r.json();
 
     const age=Date.now()-Date.parse(d.actualizado);
-    const sourceAge=Date.now()-Date.parse(d.fecha_fuente.replace(/ CET$/," +0100").replace(/ CEST$/," +0200"));
+
+    const sourceAge=Date.now()-Date.parse(
+      d.fecha_fuente.replace(/ CET$/," +0100").replace(/ CEST$/," +0200")
+    );
 
     if(!Number.isFinite(age)||age<0||age>2700000)throw Error();
     if(!Number.isFinite(sourceAge)||sourceAge<0||sourceAge>2700000)throw Error();
     if(!roads[key]||!Array.isArray(d.incidencias))throw Error();
 
     const items=d.incidencias.filter(i=>{
-  const via=i.via.toUpperCase();
+      const via=String(i.via||"").toUpperCase();
 
-  if(!roads[key].some(v=>v.toUpperCase()===via))
-    return false;
+      if(!roads[key].some(v=>v.toUpperCase()===via))
+        return false;
 
- const tramos={
-  "C-13":[[85,99.358],[127.850,157.966]]
-};
-  };
+      const tramos={
+        "C-13":[[85,99.358],[127.850,157.966]]
+      };
 
-  const pk=i.descripcion.match(
-    /Punt km\.\s*(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)/i
-  );
+      const pk=String(i.descripcion||"").match(
+        /Punt km\.\s*(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)/i
+      );
 
-  if(!pk||!tramos[via])return true;
+      if(!pk||!tramos[via])return true;
 
-  const a=Number(pk[1].replace(",","."));
-  const b=Number(pk[2].replace(",","."));
-  const inicio=Math.min(a,b);
-  const fin=Math.max(a,b);
+      const a=Number(pk[1].replace(",","."));
+      const b=Number(pk[2].replace(",","."));
+      const inicio=Math.min(a,b);
+      const fin=Math.max(a,b);
 
-  // Filtro provisional: conservar también
-  // el tramo Tremp - La Pobla de Segur.
- 
-
-  return tramos[via].some(([min,max])=>
-    inicio<=max&&fin>=min
-  );
-});
-    );
+      return tramos[via].some(([min,max])=>
+        inicio<=max&&fin>=min
+      );
+    });
 
     items.sort((a,b)=>
       Number(b.estado==="rojo")-Number(a.estado==="rojo")
     );
 
-    const status=items.some(i=>i.estado==="rojo")?"🔴":items.length?"🟡":"🟢";
+    const status=items.some(i=>i.estado==="rojo")
+      ?"🔴":items.length?"🟡":"🟢";
+
     icon.textContent=status;
     card.title="Consultar incidencias";
 
     if(detail){
       add("p",status+" "+items.length+" incidencias notificadas",report);
 
-      add("small","Actualización: "+new Date(d.actualizado).toLocaleString("es-ES",{timeZone:"Europe/Madrid"}),report);
+      add(
+        "small",
+        "Actualización: "+new Date(d.actualizado).toLocaleString(
+          "es-ES",{timeZone:"Europe/Madrid"}
+        ),
+        report
+      );
 
       items.forEach(i=>{
         const box=add("div","",report);
         box.className="item";
+
         add("strong",(i.estado==="rojo"?"🔴 ":"🟡 ")+i.via,box);
         add("p",i.titulo,box);
         add("small",i.descripcion,box);
       });
 
       if(!items.length){
-        add("p","Sin incidencias notificadas en las vías consultadas.",report);
+        add("p","Sin incidencias notificadas en los tramos y vías consultados.",report);
       }
     }
 
   }catch(e){
     icon.textContent="⚪";
-    if(detail)add("p","⚪ Datos no disponibles o desactualizados.",report);
+
+    if(detail){
+      add("p","⚪ Datos no disponibles o desactualizados.",report);
+    }
   }
 
   if(detail){
-    add("p","Aviso: se consultan carreteras completas. Algunas incidencias pueden quedar fuera del recorrido. Los accesos locales no están verificados. Información actual, no previsión para la fecha de rodaje.",report);
+    add(
+      "p",
+      "Aviso: filtro kilométrico provisional en la C-13. Las demás carreteras se consultan completas. Algunas incidencias pueden quedar fuera del recorrido. Los accesos locales no están verificados. La ausencia de alertas no garantiza que la vía sea transitable. Información actual, no previsión para la fecha de rodaje.",
+      report
+    );
+
     const link=add("a","Consultar fuente oficial: Trànsit",report);
     link.href="https://cit.transit.gencat.cat/";
     link.target="_blank";
