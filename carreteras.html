@@ -81,8 +81,9 @@ async function actualizar(){
   if(!roads[key].some(v=>v.toUpperCase()===via))
     return false;
 
-  const tramos={
-    "C-13":[[127.850,157.966]]
+ const tramos={
+  "C-13":[[85,99.358],[127.850,157.966]]
+};
   };
 
   const pk=i.descripcion.match(
@@ -98,7 +99,7 @@ async function actualizar(){
 
   // Filtro provisional: conservar también
   // el tramo Tremp - La Pobla de Segur.
-  if(via==="C-13")return true;
+ 
 
   return tramos[via].some(([min,max])=>
     inicio<=max&&fin>=min
