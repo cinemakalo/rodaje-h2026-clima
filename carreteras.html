@@ -75,8 +75,35 @@ async function actualizar(){
     if(!Number.isFinite(sourceAge)||sourceAge<0||sourceAge>2700000)throw Error();
     if(!roads[key]||!Array.isArray(d.incidencias))throw Error();
 
-    const items=d.incidencias.filter(i=>
-      roads[key].some(v=>v.toUpperCase()===i.via.toUpperCase())
+    const items=d.incidencias.filter(i=>{
+  const via=i.via.toUpperCase();
+
+  if(!roads[key].some(v=>v.toUpperCase()===via))
+    return false;
+
+  const tramos={
+    "C-13":[[127.850,157.966]]
+  };
+
+  const pk=i.descripcion.match(
+    /Punt km\.\s*(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)/i
+  );
+
+  if(!pk||!tramos[via])return true;
+
+  const a=Number(pk[1].replace(",","."));
+  const b=Number(pk[2].replace(",","."));
+  const inicio=Math.min(a,b);
+  const fin=Math.max(a,b);
+
+  // Filtro provisional: conservar también
+  // el tramo Tremp - La Pobla de Segur.
+  if(via==="C-13")return true;
+
+  return tramos[via].some(([min,max])=>
+    inicio<=max&&fin>=min
+  );
+});
     );
 
     items.sort((a,b)=>
