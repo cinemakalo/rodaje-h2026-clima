@@ -90,7 +90,8 @@ async function actualizar(){
         return false;
 
       const tramos={
-        "C-13":[[85,99.358],[127.850,157.966]]
+        "C-13":[[85,99.358],[127.850,157.966]],
+        "C-28":[[33,67]]
       };
 
       const pk=String(i.descripcion||"").match(
@@ -155,7 +156,7 @@ async function actualizar(){
   if(detail){
     add(
       "p",
-      "Aviso: filtro kilométrico provisional en la C-13. Las demás carreteras se consultan completas. Algunas incidencias pueden quedar fuera del recorrido. Los accesos locales no están verificados. La ausencia de alertas no garantiza que la vía sea transitable. Información actual, no previsión para la fecha de rodaje.",
+      "Aviso: filtros kilométricos provisionales en la C-13 y la C-28. Las demás carreteras se consultan completas. Algunas incidencias pueden quedar fuera del recorrido. Los accesos locales no están verificados. La ausencia de alertas no garantiza que la vía sea transitable. Información actual, no previsión para la fecha de rodaje.",
       report
     );
 
