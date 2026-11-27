@@ -1,7 +1,13 @@
 {
-  "actualizado": "2026-11-27T05:12:19.595650+00:00",
-  "fecha_fuente": "Fri, 27 Nov 2026 06:12:03 CET",
+  "actualizado": "2026-11-27T06:22:39.312094+00:00",
+  "fecha_fuente": "Fri, 27 Nov 2026 07:22:02 CET",
   "incidencias": [
+    {
+      "via": "A-2",
+      "titulo": "NETEJA. Calçada restringida (Obres)",
+      "descripcion": "A-2 | SANT VICENÇ DELS HORTS | Sentit Est cap a BARCELONA | Punt km. 602-603.5 | 06:00",
+      "estado": "amarillo"
+    },
     {
       "via": "A-2",
       "titulo": "REFORÇAMENT DE FERM. Calçada restringida. Desviaments (Obres)",
@@ -16,20 +22,14 @@
     },
     {
       "via": "A-2",
-      "titulo": "ESLLAVISSADA. Calçada restringida (Obres)",
-      "descripcion": "A-2 | ARGENÇOLA | Sentit Oest cap a LLEIDA | Punt km. 536-535 | 07:47",
-      "estado": "amarillo"
-    },
-    {
-      "via": "A-2",
       "titulo": "REPARACIÓ D'ESTRUCTURES. Calçada restringida (Obres)",
       "descripcion": "A-2 | JORBA | Sentit Oest cap a LLEIDA | Punt km. 548.5-545 | 07:47",
       "estado": "amarillo"
     },
     {
       "via": "A-2",
-      "titulo": "NETEJA. Calçada restringida (Obres)",
-      "descripcion": "A-2 | SANT VICENÇ DELS HORTS | Sentit Est cap a BARCELONA | Punt km. 602-603.5 | 06:00",
+      "titulo": "ESLLAVISSADA. Calçada restringida (Obres)",
+      "descripcion": "A-2 | ARGENÇOLA | Sentit Oest cap a LLEIDA | Punt km. 536-535 | 07:47",
       "estado": "amarillo"
     },
     {
@@ -47,25 +47,25 @@
     {
       "via": "AP-2",
       "titulo": "REPARACIÓ DE FERM. Calçada restringida (Obres)",
-      "descripcion": "AP-2 | CABRA DEL CAMP | Sentit Oest cap a LLEIDA | Punt km. 205.5-205 | 13:44",
+      "descripcion": "AP-2 | MONTBLANC | Sentit Est cap a BARCELONA | Punt km. 191-192.5 | 10:31",
       "estado": "amarillo"
     },
     {
       "via": "AP-2",
       "titulo": "REPARACIÓ DE FERM. Calçada restringida (Obres)",
-      "descripcion": "AP-2 | MONTBLANC | Sentit Est cap a BARCELONA | Punt km. 191-192.5 | 10:31",
+      "descripcion": "AP-2 | CABRA DEL CAMP | Sentit Oest cap a LLEIDA | Punt km. 205.5-205 | 13:44",
       "estado": "amarillo"
     },
     {
       "via": "AP-7",
-      "titulo": "REPARACIÓ D'ESTRUCTURES. Calçada restringida (Obres)",
-      "descripcion": "AP-7 | POBLA DE MONTORNÈS | Sentit Ambdós sentits | Punt km. 230-230.6 | 10:00",
+      "titulo": "ALTRES. Circulació intensa (Retenció)",
+      "descripcion": "AP-7 | TARRAGONA | Sentit Sud cap a TARRAGONA-TALLAT UN CARRIL I L'ACCÉS A L'ÀREA DE DESCANS | Punt km. 247-246 | 01:58",
       "estado": "amarillo"
     },
     {
       "via": "AP-7",
-      "titulo": "AUSCULTACIÓ AMB CAMIÓ DEFLECTÒGRAF. Calçada restringida (Obres)",
-      "descripcion": "AP-7 | JONQUERA | Sentit Ambdós sentits | Punt km. 0-92 | 10:31",
+      "titulo": "ACCIDENT. Circulació amb retencions (Retenció)",
+      "descripcion": "AP-7 | BÀSCARA | Sentit Sud cap a BARCELONA-VEHICLES AL VORAL | Punt km. 40-37 | 07:18",
       "estado": "amarillo"
     },
     {
@@ -76,20 +76,44 @@
     },
     {
       "via": "AP-7",
-      "titulo": "ALTRES. Circulació intensa (Retenció)",
-      "descripcion": "AP-7 | TARRAGONA | Sentit Sud cap a TARRAGONA-TALLAT UN CARRIL I L'ACCÉS A L'ÀREA DE DESCANS | Punt km. 247-246 | 01:58",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "AP-7 | SANTA PERPÈTUA DE MOGODA | Sentit Sud cap a TARRAGONA | Punt km. 145.5-141 | 07:07",
+      "estado": "amarillo"
+    },
+    {
+      "via": "AP-7",
+      "titulo": "AUSCULTACIÓ AMB CAMIÓ DEFLECTÒGRAF. Calçada restringida (Obres)",
+      "descripcion": "AP-7 | JONQUERA | Sentit Ambdós sentits | Punt km. 0-92 | 10:31",
+      "estado": "amarillo"
+    },
+    {
+      "via": "AP-7",
+      "titulo": "REPARACIÓ D'ESTRUCTURES. Calçada restringida (Obres)",
+      "descripcion": "AP-7 | POBLA DE MONTORNÈS | Sentit Ambdós sentits | Punt km. 230-230.6 | 10:00",
       "estado": "amarillo"
     },
     {
       "via": "B-10",
-      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
-      "descripcion": "B-10 | SANT ADRIÀ DE BESÒS | Sentit Ambdós sentits | Punt km. 5-1 | 23:00",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "B-10 | BARCELONA | Sentit Sud cap a NUS LLOBREGAT | Punt km. 10-3.5 | 07:02",
       "estado": "amarillo"
     },
     {
       "via": "B-10",
       "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
       "descripcion": "B-10 | BARCELONA | Sentit Oest cap a NUS LLOBREGAT-HORARI: 23 a 5:30h | Punt km. 8-12 | 23:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "B-10",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "B-10 | BARCELONA | Sentit Nord cap a NUS TRINITAT | Punt km. 12-17.5 | 07:14",
+      "estado": "amarillo"
+    },
+    {
+      "via": "B-10",
+      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
+      "descripcion": "B-10 | SANT ADRIÀ DE BESÒS | Sentit Ambdós sentits | Punt km. 5-1 | 23:00",
       "estado": "amarillo"
     },
     {
@@ -112,14 +136,14 @@
     },
     {
       "via": "B-20",
-      "titulo": "NETEJA. Calçada restringida (Obres)",
-      "descripcion": "B-20 | PRAT DE LLOBREGAT | Sentit Sud cap a TARRAGONA | Punt km. 1.6-0 | 06:00",
+      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
+      "descripcion": "B-20 | BARCELONA | Sentit Ambdós sentits | Punt km. 16-18.5 | 09:17",
       "estado": "amarillo"
     },
     {
       "via": "B-20",
-      "titulo": "NETEJA. Calçada restringida (Obres)",
-      "descripcion": "B-20 | PRAT DE LLOBREGAT | Sentit Sud cap a TARRAGONA | Punt km. 1.6-0 | 06:00",
+      "titulo": "CIRCULACIÓ. Circulació amb congestió (Retenció)",
+      "descripcion": "B-20 | BARCELONA | Sentit Nord cap a NUS TRINITAT | Punt km. 11.5-6 | 07:10",
       "estado": "amarillo"
     },
     {
@@ -130,8 +154,20 @@
     },
     {
       "via": "B-20",
-      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
-      "descripcion": "B-20 | BARCELONA | Sentit Ambdós sentits | Punt km. 16-18.5 | 09:17",
+      "titulo": "CIRCULACIÓ. Circulació amb congestió (Retenció)",
+      "descripcion": "B-20 | BARCELONA | Sentit Sud cap a NUS LLOBREGAT | Punt km. 11.5-16.5 | 06:29",
+      "estado": "amarillo"
+    },
+    {
+      "via": "B-20",
+      "titulo": "NETEJA. Calçada restringida (Obres)",
+      "descripcion": "B-20 | PRAT DE LLOBREGAT | Sentit Sud cap a TARRAGONA | Punt km. 1.6-0 | 06:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "B-20",
+      "titulo": "NETEJA. Calçada restringida (Obres)",
+      "descripcion": "B-20 | PRAT DE LLOBREGAT | Sentit Sud cap a TARRAGONA | Punt km. 1.6-0 | 06:00",
       "estado": "amarillo"
     },
     {
@@ -150,6 +186,18 @@
       "via": "B-23",
       "titulo": "NETEJA. Calçada restringida (Obres)",
       "descripcion": "B-23 | MOLINS DE REI | Sentit Sud cap a BARCELONA | Punt km. 10.6-9.6 | 06:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "B-23",
+      "titulo": "CIRCULACIÓ. Circulació intensa (Retenció)",
+      "descripcion": "B-23 | BARCELONA | Sentit Est cap a BARCELONA | Punt km. 0-2 | 07:20",
+      "estado": "amarillo"
+    },
+    {
+      "via": "B-23",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "B-23 | SANT FELIU DE LLOBREGAT | Sentit Sud cap a BARCELONA | Punt km. 8-10 | 07:10",
       "estado": "amarillo"
     },
     {
@@ -232,6 +280,12 @@
     },
     {
       "via": "BP-5002",
+      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
+      "descripcion": "BP-5002 | VALLROMANES | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 6-14.1 | 08:41",
+      "estado": "amarillo"
+    },
+    {
+      "via": "BP-5002",
       "titulo": "NETEJA. Calçada restringida (Obres)",
       "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 1.5-10.5 | 09:00",
       "estado": "amarillo"
@@ -246,12 +300,6 @@
       "via": "BP-5002",
       "titulo": "NETEJA. Calçada restringida (Obres)",
       "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a HORARI: 7 a 15h   i   22 a 6h | Punt km. 1.5-15.9 | 07:00",
-      "estado": "amarillo"
-    },
-    {
-      "via": "BP-5002",
-      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
-      "descripcion": "BP-5002 | VALLROMANES | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 6-14.1 | 08:41",
       "estado": "amarillo"
     },
     {
@@ -298,14 +346,14 @@
     },
     {
       "via": "BV-2241",
-      "titulo": "REASFALTAT. Calçada restringida (Obres)",
-      "descripcion": "BV-2241 | SANT SADURNÍ D'ANOIA | Sentit Ambdós sentits | Punt km. 0-9 | 07:00",
+      "titulo": "MILLORA DE TRAÇAT. Calçada restringida (Obres)",
+      "descripcion": "BV-2241 | SANT SADURNÍ D'ANOIA | Sentit Ambdós sentits | Punt km. 0-9 | 15:51",
       "estado": "amarillo"
     },
     {
       "via": "BV-2241",
-      "titulo": "MILLORA DE TRAÇAT. Calçada restringida (Obres)",
-      "descripcion": "BV-2241 | SANT SADURNÍ D'ANOIA | Sentit Ambdós sentits | Punt km. 0-9 | 15:51",
+      "titulo": "REASFALTAT. Calçada restringida (Obres)",
+      "descripcion": "BV-2241 | SANT SADURNÍ D'ANOIA | Sentit Ambdós sentits | Punt km. 0-9 | 07:00",
       "estado": "amarillo"
     },
     {
@@ -346,14 +394,8 @@
     },
     {
       "via": "C-12",
-      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
-      "descripcion": "C-12 | TORTOSA | Sentit Ambdós sentits | Punt km. 18-18.3 | 07:30",
-      "estado": "amarillo"
-    },
-    {
-      "via": "C-12",
-      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
-      "descripcion": "C-12 | XERTA | Sentit Ambdós sentits | Punt km. 28-28.1 | 07:30",
+      "titulo": "CANALITZACIÓ DE FIBRA. Calçada restringida (Obres)",
+      "descripcion": "C-12 | BALAGUER | Sentit Ambdós sentits | Punt km. 160-0 | 08:38",
       "estado": "amarillo"
     },
     {
@@ -364,8 +406,20 @@
     },
     {
       "via": "C-12",
-      "titulo": "CANALITZACIÓ DE FIBRA. Calçada restringida (Obres)",
-      "descripcion": "C-12 | BALAGUER | Sentit Ambdós sentits | Punt km. 160-0 | 08:38",
+      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
+      "descripcion": "C-12 | XERTA | Sentit Ambdós sentits | Punt km. 28-28.1 | 07:30",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-12",
+      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
+      "descripcion": "C-12 | TORTOSA | Sentit Ambdós sentits | Punt km. 18-18.3 | 07:30",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-13",
+      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
+      "descripcion": "C-13 | TALARN | Sentit Ambdós sentits cap a HORARI: 7 a 16h | Punt km. 91.3-91.4 | 08:00",
       "estado": "amarillo"
     },
     {
@@ -373,12 +427,6 @@
       "titulo": "OBRES EN GENERAL. Calçada tallada (Obres)",
       "descripcion": "C-13 | LLAVORSÍ | Sentit Ambdós sentits cap a HORARI: 23 a 5h | Punt km. 142.1-142.2 | 10:59",
       "estado": "rojo"
-    },
-    {
-      "via": "C-13",
-      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
-      "descripcion": "C-13 | TALARN | Sentit Ambdós sentits cap a HORARI: 7 a 16h | Punt km. 91.3-91.4 | 08:00",
-      "estado": "amarillo"
     },
     {
       "via": "C-1311",
@@ -418,14 +466,14 @@
     },
     {
       "via": "C-142b",
-      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
-      "descripcion": "C-142b | NAUT ARAN | Sentit Ambdós sentits cap a HORARI: 8 a 19h | Punt km. 0-3.5 | 08:00",
+      "titulo": "NEU. Obligatori cadenes (Meteorologia)",
+      "descripcion": "C-142b | NAUT ARAN | Sentit Ambdós sentits cap a ACCÉS PLA DE BERET | Punt km. 0-9 | 15:16",
       "estado": "amarillo"
     },
     {
       "via": "C-142b",
-      "titulo": "NEU. Obligatori cadenes (Meteorologia)",
-      "descripcion": "C-142b | NAUT ARAN | Sentit Ambdós sentits cap a ACCÉS PLA DE BERET | Punt km. 0-9 | 15:16",
+      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
+      "descripcion": "C-142b | NAUT ARAN | Sentit Ambdós sentits cap a HORARI: 8 a 19h | Punt km. 0-3.5 | 08:00",
       "estado": "amarillo"
     },
     {
@@ -453,12 +501,6 @@
       "estado": "amarillo"
     },
     {
-      "via": "C-16",
-      "titulo": "BOIRA. Boira (Meteorologia)",
-      "descripcion": "C-16 | PUIG-REIG | Sentit Ambdós sentits | Punt km. 83-93 | 01:46",
-      "estado": "amarillo"
-    },
-    {
       "via": "C-162",
       "titulo": "SENYALITZACIÓ HORITZONTAL. Calçada restringida (Obres)",
       "descripcion": "C-162 | RIU DE CERDANYA | Sentit Ambdós sentits cap a HORARI: 9 a 17h | Punt km. 0-10.7 | 09:00",
@@ -468,6 +510,24 @@
       "via": "C-162",
       "titulo": "SENYALITZACIÓ HORITZONTAL. Calçada restringida (Obres)",
       "descripcion": "C-162 | RIU DE CERDANYA | Sentit Ambdós sentits cap a HORARI: 9 a 17h | Punt km. 0-10.7 | 09:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-17",
+      "titulo": "REASFALTAT. Calçada tallada (Obres)",
+      "descripcion": "C-17 | MALLA | Sentit Ambdós sentits cap a Lateral C-17 | Punt km. 57-59 | 22:00",
+      "estado": "rojo"
+    },
+    {
+      "via": "C-17",
+      "titulo": "REPARACIÓ DE FERM. Calçada restringida (Obres)",
+      "descripcion": "C-17 | VIC | Sentit Ambdós sentits cap a Lateral Esquerre | Punt km. 58-59 | 22:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-17",
+      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
+      "descripcion": "C-17 | CANOVELLES | Sentit Nord cap a HORARI: 22 a 6h | Punt km. 21.5-25.5 | 08:43",
       "estado": "amarillo"
     },
     {
@@ -508,8 +568,8 @@
     },
     {
       "via": "C-17",
-      "titulo": "NETEJA. Calçada restringida (Obres)",
-      "descripcion": "C-17 | BARCELONA | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 0-4.4 | 07:00",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "C-17 | MOLLET DEL VALLÈS | Sentit Sud cap a BARCELONA | Punt km. 13-14 | 07:09",
       "estado": "amarillo"
     },
     {
@@ -520,21 +580,9 @@
     },
     {
       "via": "C-17",
-      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
-      "descripcion": "C-17 | CANOVELLES | Sentit Nord cap a HORARI: 22 a 6h | Punt km. 21.5-25.5 | 08:43",
+      "titulo": "NETEJA. Calçada restringida (Obres)",
+      "descripcion": "C-17 | BARCELONA | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 0-4.4 | 07:00",
       "estado": "amarillo"
-    },
-    {
-      "via": "C-17",
-      "titulo": "REPARACIÓ DE FERM. Calçada restringida (Obres)",
-      "descripcion": "C-17 | VIC | Sentit Ambdós sentits cap a Lateral Esquerre | Punt km. 58-59 | 22:00",
-      "estado": "amarillo"
-    },
-    {
-      "via": "C-17",
-      "titulo": "REASFALTAT. Calçada tallada (Obres)",
-      "descripcion": "C-17 | MALLA | Sentit Ambdós sentits cap a Lateral C-17 | Punt km. 57-59 | 22:00",
-      "estado": "rojo"
     },
     {
       "via": "C-233",
@@ -556,14 +604,14 @@
     },
     {
       "via": "C-25",
-      "titulo": "REPARACIÓ DE BIONA. Calçada restringida (Obres)",
-      "descripcion": "C-25 | MANRESA | Sentit Est cap a GIRONA | Punt km. 130-131 | 08:11",
+      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
+      "descripcion": "C-25 | BRUNYOLA | Sentit Oest cap a LLEIDA | Punt km. 225-224 | 15:02",
       "estado": "amarillo"
     },
     {
       "via": "C-25",
-      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
-      "descripcion": "C-25 | BRUNYOLA | Sentit Oest cap a LLEIDA | Punt km. 225-224 | 15:02",
+      "titulo": "REPARACIÓ DE BIONA. Calçada restringida (Obres)",
+      "descripcion": "C-25 | MANRESA | Sentit Est cap a GIRONA | Punt km. 130-131 | 08:11",
       "estado": "amarillo"
     },
     {
@@ -580,21 +628,15 @@
     },
     {
       "via": "C-26",
-      "titulo": "SONDEJOS. Calçada restringida (Obres)",
-      "descripcion": "C-26 | ESPUNYOLA | Sentit Ambdós sentits | Punt km. 136-137 | 11:30",
-      "estado": "amarillo"
-    },
-    {
-      "via": "C-26",
       "titulo": "MILLORA DE TRAÇAT. Calçada restringida (Obres)",
       "descripcion": "C-26 | ESPUNYOLA | Sentit Ambdós sentits | Punt km. 129.5-130 | 08:37",
       "estado": "amarillo"
     },
     {
-      "via": "C-28",
-      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada tallada (Obres)",
-      "descripcion": "C-28 | NAUT ARAN | Sentit Ambdós sentits | Punt km. 41.9-45.9 | 08:00",
-      "estado": "rojo"
+      "via": "C-26",
+      "titulo": "SONDEJOS. Calçada restringida (Obres)",
+      "descripcion": "C-26 | ESPUNYOLA | Sentit Ambdós sentits | Punt km. 136-137 | 11:30",
+      "estado": "amarillo"
     },
     {
       "via": "C-28",
@@ -611,19 +653,25 @@
     {
       "via": "C-28",
       "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada tallada (Obres)",
+      "descripcion": "C-28 | NAUT ARAN | Sentit Ambdós sentits | Punt km. 41.9-45.9 | 08:00",
+      "estado": "rojo"
+    },
+    {
+      "via": "C-28",
+      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada tallada (Obres)",
       "descripcion": "C-28 | NAUT ARAN | Sentit Ambdós sentits cap a FEINERS: TALLADA de 8:30 a 14:30h i  15:30 a 17:30h.  DISSABTES, DIUMENGES i FESTIUS: PAS ALTERNATIU | Punt km. 42.6-43.5 | 20:49",
       "estado": "rojo"
     },
     {
       "via": "C-31",
-      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
-      "descripcion": "C-31 | BADALONA | Sentit Nord cap a C-31 LD | Punt km. 211-215.5 | 22:00",
+      "titulo": "OBRES EN GENERAL. Calçada restringida (Obres)",
+      "descripcion": "C-31 | ULLÀ | Sentit Ambdós sentits | Punt km. 350.5-352 | 08:00",
       "estado": "amarillo"
     },
     {
       "via": "C-31",
       "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
-      "descripcion": "C-31 | BADALONA | Sentit Sud cap a C-31 LE | Punt km. 210.9-212.3 | 22:00",
+      "descripcion": "C-31 | BADALONA | Sentit Nord cap a C-31 LD | Punt km. 211-215.5 | 22:00",
       "estado": "amarillo"
     },
     {
@@ -634,8 +682,20 @@
     },
     {
       "via": "C-31",
-      "titulo": "OBRES EN GENERAL. Calçada restringida (Obres)",
-      "descripcion": "C-31 | ULLÀ | Sentit Ambdós sentits | Punt km. 350.5-352 | 08:00",
+      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
+      "descripcion": "C-31 | BADALONA | Sentit Sud cap a C-31 LE | Punt km. 210.9-212.3 | 22:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-32",
+      "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
+      "descripcion": "C-32 | SANT PERE DE RIBES | Sentit Sud cap a TARRAGONA | Punt km. 24-27 | 07:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-32",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "C-32 | SANT BOI DE LLOBREGAT | Sentit Nord cap a BARCELONA | Punt km. 54-52 | 07:14",
       "estado": "amarillo"
     },
     {
@@ -645,9 +705,9 @@
       "estado": "amarillo"
     },
     {
-      "via": "C-32",
-      "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
-      "descripcion": "C-32 | SANT PERE DE RIBES | Sentit Sud cap a TARRAGONA | Punt km. 24-27 | 07:00",
+      "via": "C-35",
+      "titulo": "OBRES EN GENERAL. Calçada restringida (Obres)",
+      "descripcion": "C-35 | SANT CELONI | Sentit Ambdós sentits | Punt km. 55.4-57.6 | 08:00",
       "estado": "amarillo"
     },
     {
@@ -658,8 +718,8 @@
     },
     {
       "via": "C-35",
-      "titulo": "MILLORA DE TRAÇAT. Calçada restringida (Obres)",
-      "descripcion": "C-35 | SANT CELONI | Sentit Ambdós sentits | Punt km. 55.4-57 | 11:00",
+      "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
+      "descripcion": "C-35 | GRANOLLERS | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 40-53.1 | 22:00",
       "estado": "amarillo"
     },
     {
@@ -670,14 +730,14 @@
     },
     {
       "via": "C-35",
-      "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
-      "descripcion": "C-35 | GRANOLLERS | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 40-53.1 | 22:00",
+      "titulo": "MILLORA DE TRAÇAT. Calçada restringida (Obres)",
+      "descripcion": "C-35 | SANT CELONI | Sentit Ambdós sentits | Punt km. 55.4-57 | 11:00",
       "estado": "amarillo"
     },
     {
-      "via": "C-35",
-      "titulo": "OBRES EN GENERAL. Calçada restringida (Obres)",
-      "descripcion": "C-35 | SANT CELONI | Sentit Ambdós sentits | Punt km. 55.4-57.6 | 08:00",
+      "via": "C-352",
+      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
+      "descripcion": "C-352 | FRANQUESES DEL VALLÈS | Sentit Ambdós sentits cap a HORARI: 7 a 15h  | Punt km. 22.5-23 | 08:49",
       "estado": "amarillo"
     },
     {
@@ -693,21 +753,15 @@
       "estado": "amarillo"
     },
     {
-      "via": "C-352",
-      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
-      "descripcion": "C-352 | FRANQUESES DEL VALLÈS | Sentit Ambdós sentits cap a HORARI: 7 a 15h  | Punt km. 22.5-23 | 08:49",
+      "via": "C-37",
+      "titulo": "OBRES EN GENERAL. Calçada restringida (Obres)",
+      "descripcion": "C-37 | SANTA MARGARIDA DE MONTBUI | Sentit Ambdós sentits | Punt km. 64-65 | 07:59",
       "estado": "amarillo"
     },
     {
       "via": "C-37",
       "titulo": "SONDEJOS. Calçada restringida (Obres)",
       "descripcion": "C-37 | CASTELLOLÍ | Sentit Sud cap a VILANOVA I LA GELTRÚ | Punt km. 72.4-72 | 12:00",
-      "estado": "amarillo"
-    },
-    {
-      "via": "C-37",
-      "titulo": "OBRES EN GENERAL. Calçada restringida (Obres)",
-      "descripcion": "C-37 | SANTA MARGARIDA DE MONTBUI | Sentit Ambdós sentits | Punt km. 64-65 | 07:59",
       "estado": "amarillo"
     },
     {
@@ -719,19 +773,19 @@
     {
       "via": "C-42",
       "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
+      "descripcion": "C-42 | TORTOSA | Sentit Ambdós sentits | Punt km. 5.2-6.3 | 07:30",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-42",
+      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
+      "descripcion": "C-42 | TORTOSA | Sentit Ambdós sentits | Punt km. 5.2-6.3 | 07:30",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-42",
+      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
       "descripcion": "C-42 | TORTOSA | Sentit Ambdós sentits | Punt km. 3.4-4.1 | 07:30",
-      "estado": "amarillo"
-    },
-    {
-      "via": "C-42",
-      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
-      "descripcion": "C-42 | TORTOSA | Sentit Ambdós sentits | Punt km. 5.2-6.3 | 07:30",
-      "estado": "amarillo"
-    },
-    {
-      "via": "C-42",
-      "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
-      "descripcion": "C-42 | TORTOSA | Sentit Ambdós sentits | Punt km. 5.2-6.3 | 07:30",
       "estado": "amarillo"
     },
     {
@@ -742,8 +796,8 @@
     },
     {
       "via": "C-462",
-      "titulo": "ENCREUAMENT AERI. Calçada restringida (Obres)",
-      "descripcion": "C-462 | JOSA I TUIXÉN | Sentit Ambdós sentits | Punt km. 53-53.5 | 08:00",
+      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
+      "descripcion": "C-462 | JOSA I TUIXÉN | Sentit Ambdós sentits cap a HORARI: 7 a 16h | Punt km. 50.3-50.4 | 07:36",
       "estado": "amarillo"
     },
     {
@@ -754,8 +808,8 @@
     },
     {
       "via": "C-462",
-      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
-      "descripcion": "C-462 | JOSA I TUIXÉN | Sentit Ambdós sentits cap a HORARI: 7 a 16h | Punt km. 50.3-50.4 | 07:36",
+      "titulo": "ENCREUAMENT AERI. Calçada restringida (Obres)",
+      "descripcion": "C-462 | JOSA I TUIXÉN | Sentit Ambdós sentits | Punt km. 53-53.5 | 08:00",
       "estado": "amarillo"
     },
     {
@@ -778,14 +832,32 @@
     },
     {
       "via": "C-58",
-      "titulo": "REPARACIÓ DE JUNTES DE DILATACIÓ. Calçada restringida (Obres)",
-      "descripcion": "C-58 | VACARISSES | Sentit Ambdós sentits cap a HORARI: 22 a 6h | Punt km. 31.5-32 | 22:00",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "C-58 | SABADELL | Sentit Sud cap a BARCELONA | Punt km. 11.5-15.5 | 07:05",
       "estado": "amarillo"
     },
     {
       "via": "C-58",
-      "titulo": "NETEJA. Calçada restringida (Obres)",
-      "descripcion": "C-58 | BARCELONA | Sentit Ambdós sentits cap a HORARI: 22 a 6h | Punt km. 0-6 | 22:00",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "C-58 | RIPOLLET | Sentit Nord cap a SABADELL | Punt km. 7.5-4.5 | 07:04",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-58",
+      "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
+      "descripcion": "C-58 | BARCELONA | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 0-24.2 | 07:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-58",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "C-58 | BARCELONA | Sentit Sud cap a BARCELONA | Punt km. 0-2.5 | 07:03",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-58",
+      "titulo": "REPARACIÓ DE JUNTES DE DILATACIÓ. Calçada restringida (Obres)",
+      "descripcion": "C-58 | VACARISSES | Sentit Ambdós sentits cap a HORARI: 22 a 6h | Punt km. 31.5-32 | 22:00",
       "estado": "amarillo"
     },
     {
@@ -796,14 +868,38 @@
     },
     {
       "via": "C-58",
-      "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
-      "descripcion": "C-58 | BARCELONA | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 0-24.2 | 07:00",
+      "titulo": "NETEJA. Calçada restringida (Obres)",
+      "descripcion": "C-58 | BARCELONA | Sentit Ambdós sentits cap a HORARI: 22 a 6h | Punt km. 0-6 | 22:00",
       "estado": "amarillo"
     },
     {
       "via": "C-58c",
       "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
       "descripcion": "C-58c | SABADELL | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 1.5-3 | 08:09",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-59",
+      "titulo": "NETEJA. Calçada restringida (Obres)",
+      "descripcion": "C-59 | SANTA PERPÈTUA DE MOGODA | Sentit Ambdós sentits cap a HORARI: 22 a 6h | Punt km. 3-4 | 22:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-59",
+      "titulo": "SENYALITZACIÓ HORITZONTAL. Calçada restringida (Obres)",
+      "descripcion": "C-59 | CALDES DE MONTBUI | Sentit Ambdós sentits cap a HORARI: 22 a 6h | Punt km. 13.3-14.2 | 19:23",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-59",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "C-59 | PALAU-SOLITÀ I PLEGAMANS | Sentit Sud cap a BARCELONA | Punt km. 10-13 | 07:19",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-59",
+      "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
+      "descripcion": "C-59 | MOLLET DEL VALLÈS | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 0.5-4.9 | 22:00",
       "estado": "amarillo"
     },
     {
@@ -825,27 +921,9 @@
       "estado": "amarillo"
     },
     {
-      "via": "C-59",
-      "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
-      "descripcion": "C-59 | MOLLET DEL VALLÈS | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 0.5-4.9 | 22:00",
-      "estado": "amarillo"
-    },
-    {
-      "via": "C-59",
-      "titulo": "NETEJA. Calçada restringida (Obres)",
-      "descripcion": "C-59 | SANTA PERPÈTUA DE MOGODA | Sentit Ambdós sentits cap a HORARI: 22 a 6h | Punt km. 3-4 | 22:00",
-      "estado": "amarillo"
-    },
-    {
-      "via": "C-59",
-      "titulo": "SENYALITZACIÓ HORITZONTAL. Calçada restringida (Obres)",
-      "descripcion": "C-59 | CALDES DE MONTBUI | Sentit Ambdós sentits cap a HORARI: 22 a 6h | Punt km. 13.3-14.2 | 19:23",
-      "estado": "amarillo"
-    },
-    {
       "via": "C-60",
       "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
-      "descripcion": "C-60 | ARGENTONA | Sentit Ambdós sentits | Punt km. 0.2-5 | 22:00",
+      "descripcion": "C-60 | ROCA DEL VALLÈS | Sentit Ambdós sentits | Punt km. 8.5-9.6 | 22:00",
       "estado": "amarillo"
     },
     {
@@ -857,13 +935,19 @@
     {
       "via": "C-60",
       "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
-      "descripcion": "C-60 | ROCA DEL VALLÈS | Sentit Ambdós sentits | Punt km. 8.5-9.6 | 22:00",
+      "descripcion": "C-60 | ARGENTONA | Sentit Ambdós sentits | Punt km. 0.2-5 | 22:00",
       "estado": "amarillo"
     },
     {
       "via": "C-60",
       "titulo": "TREBALLS DE JARDINERIA. Calçada restringida (Obres)",
       "descripcion": "C-60 | ROCA DEL VALLÈS | Sentit Ambdós sentits cap a HORARI: 7 a 15h  i  22 a 6h | Punt km. 8.5-9.7 | 09:00",
+      "estado": "amarillo"
+    },
+    {
+      "via": "C-60",
+      "titulo": "CIRCULACIÓ. Circulació amb retencions (Retenció)",
+      "descripcion": "C-60 | ROCA DEL VALLÈS | Sentit Nord cap a GRANOLLERS | Punt km. 9.5-7.5 | 07:16",
       "estado": "amarillo"
     },
     {
