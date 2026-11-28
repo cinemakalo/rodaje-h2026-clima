@@ -1,7 +1,13 @@
 {
-  "actualizado": "2026-11-28T03:57:28.170999+00:00",
-  "fecha_fuente": "Sat, 28 Nov 2026 04:57:02 CET",
+  "actualizado": "2026-11-28T05:01:41.697704+00:00",
+  "fecha_fuente": "Sat, 28 Nov 2026 05:57:02 CET",
   "incidencias": [
+    {
+      "via": "A-2",
+      "titulo": "REPARACIÓ D'ESTRUCTURES. Calçada restringida (Obres)",
+      "descripcion": "A-2 | JORBA | Sentit Oest cap a LLEIDA | Punt km. 548.5-545 | 07:47",
+      "estado": "amarillo"
+    },
     {
       "via": "A-2",
       "titulo": "REFORÇAMENT DE FERM. Calçada restringida. Desviaments (Obres)",
@@ -27,12 +33,6 @@
       "estado": "amarillo"
     },
     {
-      "via": "A-2",
-      "titulo": "REPARACIÓ D'ESTRUCTURES. Calçada restringida (Obres)",
-      "descripcion": "A-2 | JORBA | Sentit Oest cap a LLEIDA | Punt km. 548.5-545 | 07:47",
-      "estado": "amarillo"
-    },
-    {
       "via": "A-26",
       "titulo": "SENYALITZACIÓ HORITZONTAL. Calçada restringida (Obres)",
       "descripcion": "A-26 | BESALÚ | Sentit Ambdós sentits cap a Horari diürn i nocturn de 22:00 a 06:00 | Punt km. 63-84 | 08:00",
@@ -42,6 +42,12 @@
       "via": "AP-2",
       "titulo": "REPARACIÓ DE FERM. Calçada restringida (Obres)",
       "descripcion": "AP-2 | CABRA DEL CAMP | Sentit Oest cap a LLEIDA | Punt km. 205.5-205 | 13:44",
+      "estado": "amarillo"
+    },
+    {
+      "via": "AP-2",
+      "titulo": "BOIRA. Boira densa (Meteorologia)",
+      "descripcion": "AP-2 | CASTELLDANS | Sentit Ambdós sentits cap a VELOCITAT MÀXIMA PERMESA 80KM/H | Punt km. 154-160 | 05:43",
       "estado": "amarillo"
     },
     {
@@ -88,8 +94,8 @@
     },
     {
       "via": "B-20",
-      "titulo": "ACCIDENT. Circulació intensa (Retenció)",
-      "descripcion": "B-20 | BARCELONA | Sentit Sud cap a NUS TRINITAT-UN CARRIL TALLAT ACCÉS B-10 | Punt km. 16.5-17 | 04:48",
+      "titulo": "RETIRADA DE VEHICLE. Circulació intensa (Retenció)",
+      "descripcion": "B-20 | BARCELONA | Sentit Sud cap a NUS TRINITAT-UN CARRIL TALLAT ACCÉS RONDA DE DALT I C-58 | Punt km. 16.5-17 | 05:55",
       "estado": "amarillo"
     },
     {
@@ -190,14 +196,14 @@
     },
     {
       "via": "BP-5002",
-      "titulo": "CONSTRUCCIÓ DE ROTONDA. Calçada restringida (Obres)",
-      "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a ACCÉS C-32 | Punt km. 1.5-1.8 | 10:37",
+      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
+      "descripcion": "BP-5002 | VALLROMANES | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 6-14.1 | 08:41",
       "estado": "amarillo"
     },
     {
       "via": "BP-5002",
-      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
-      "descripcion": "BP-5002 | VALLROMANES | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 6-14.1 | 08:41",
+      "titulo": "CONSTRUCCIÓ DE ROTONDA. Calçada restringida (Obres)",
+      "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a ACCÉS C-32 | Punt km. 1.5-1.8 | 10:37",
       "estado": "amarillo"
     },
     {
