@@ -1,23 +1,11 @@
 {
-  "actualizado": "2026-11-28T02:54:48.645255+00:00",
-  "fecha_fuente": "Sat, 28 Nov 2026 03:52:02 CET",
+  "actualizado": "2026-11-28T03:57:28.170999+00:00",
+  "fecha_fuente": "Sat, 28 Nov 2026 04:57:02 CET",
   "incidencias": [
     {
       "via": "A-2",
-      "titulo": "ESLLAVISSADA. Calçada restringida (Obres)",
-      "descripcion": "A-2 | ARGENÇOLA | Sentit Oest cap a LLEIDA | Punt km. 536-535 | 07:47",
-      "estado": "amarillo"
-    },
-    {
-      "via": "A-2",
-      "titulo": "SENYALITZACIÓ HORITZONTAL. Calçada restringida (Obres)",
-      "descripcion": "A-2 | SILS | Sentit Ambdós sentits | Punt km. 694-735 | 17:45",
-      "estado": "amarillo"
-    },
-    {
-      "via": "A-2",
-      "titulo": "REPARACIÓ D'ESTRUCTURES. Calçada restringida (Obres)",
-      "descripcion": "A-2 | JORBA | Sentit Oest cap a LLEIDA | Punt km. 548.5-545 | 07:47",
+      "titulo": "REFORÇAMENT DE FERM. Calçada restringida. Desviaments (Obres)",
+      "descripcion": "A-2 | JORBA | Sentit Oest cap a LLEIDA | Punt km. 545-544.2 | 07:46",
       "estado": "amarillo"
     },
     {
@@ -28,8 +16,20 @@
     },
     {
       "via": "A-2",
-      "titulo": "REFORÇAMENT DE FERM. Calçada restringida. Desviaments (Obres)",
-      "descripcion": "A-2 | JORBA | Sentit Oest cap a LLEIDA | Punt km. 545-544.2 | 07:46",
+      "titulo": "SENYALITZACIÓ HORITZONTAL. Calçada restringida (Obres)",
+      "descripcion": "A-2 | SILS | Sentit Ambdós sentits | Punt km. 694-735 | 17:45",
+      "estado": "amarillo"
+    },
+    {
+      "via": "A-2",
+      "titulo": "ESLLAVISSADA. Calçada restringida (Obres)",
+      "descripcion": "A-2 | ARGENÇOLA | Sentit Oest cap a LLEIDA | Punt km. 536-535 | 07:47",
+      "estado": "amarillo"
+    },
+    {
+      "via": "A-2",
+      "titulo": "REPARACIÓ D'ESTRUCTURES. Calçada restringida (Obres)",
+      "descripcion": "A-2 | JORBA | Sentit Oest cap a LLEIDA | Punt km. 548.5-545 | 07:47",
       "estado": "amarillo"
     },
     {
@@ -52,20 +52,14 @@
     },
     {
       "via": "AP-7",
-      "titulo": "RETIRADA DE VEHICLE. Circulació intensa (Retenció)",
-      "descripcion": "AP-7 | AGULLANA | Sentit Nord cap a FRANÇA-UN CARRIL TALLAT | Punt km. 8.5-9 | 02:10",
+      "titulo": "REPARACIÓ D'ESTRUCTURES. Calçada restringida (Obres)",
+      "descripcion": "AP-7 | POBLA DE MONTORNÈS | Sentit Ambdós sentits | Punt km. 230-230.6 | 10:00",
       "estado": "amarillo"
     },
     {
       "via": "AP-7",
       "titulo": "AUSCULTACIÓ AMB CAMIÓ DEFLECTÒGRAF. Calçada restringida (Obres)",
       "descripcion": "AP-7 | JONQUERA | Sentit Ambdós sentits | Punt km. 0-92 | 10:31",
-      "estado": "amarillo"
-    },
-    {
-      "via": "AP-7",
-      "titulo": "REPARACIÓ D'ESTRUCTURES. Calçada restringida (Obres)",
-      "descripcion": "AP-7 | POBLA DE MONTORNÈS | Sentit Ambdós sentits | Punt km. 230-230.6 | 10:00",
       "estado": "amarillo"
     },
     {
@@ -82,14 +76,20 @@
     },
     {
       "via": "B-124",
+      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
+      "descripcion": "B-124 | SABADELL | Sentit Nord cap a HORARI: 7 a 15h | Punt km. 3.5-4.5 | 08:41",
+      "estado": "amarillo"
+    },
+    {
+      "via": "B-124",
       "titulo": "TREBALLS DE MANTENIMENT. Calçada restringida (Obres)",
       "descripcion": "B-124 | SANT LLORENÇ SAVALL | Sentit Ambdós sentits | Punt km. 16-36 | 08:00",
       "estado": "amarillo"
     },
     {
-      "via": "B-124",
-      "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
-      "descripcion": "B-124 | SABADELL | Sentit Nord cap a HORARI: 7 a 15h | Punt km. 3.5-4.5 | 08:41",
+      "via": "B-20",
+      "titulo": "ACCIDENT. Circulació intensa (Retenció)",
+      "descripcion": "B-20 | BARCELONA | Sentit Sud cap a NUS TRINITAT-UN CARRIL TALLAT ACCÉS B-10 | Punt km. 16.5-17 | 04:48",
       "estado": "amarillo"
     },
     {
@@ -106,14 +106,14 @@
     },
     {
       "via": "B-224",
-      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
-      "descripcion": "B-224 | PIERA | Sentit Ambdós sentits | Punt km. 7-9 | 11:21",
+      "titulo": "SONDEJOS. Calçada restringida (Obres)",
+      "descripcion": "B-224 | SANT ESTEVE SESROVIRES | Sentit Ambdós sentits | Punt km. 19-20.1 | 11:19",
       "estado": "amarillo"
     },
     {
       "via": "B-224",
-      "titulo": "SONDEJOS. Calçada restringida (Obres)",
-      "descripcion": "B-224 | SANT ESTEVE SESROVIRES | Sentit Ambdós sentits | Punt km. 19-20.1 | 11:19",
+      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
+      "descripcion": "B-224 | PIERA | Sentit Ambdós sentits | Punt km. 7-9 | 11:21",
       "estado": "amarillo"
     },
     {
@@ -190,6 +190,12 @@
     },
     {
       "via": "BP-5002",
+      "titulo": "CONSTRUCCIÓ DE ROTONDA. Calçada restringida (Obres)",
+      "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a ACCÉS C-32 | Punt km. 1.5-1.8 | 10:37",
+      "estado": "amarillo"
+    },
+    {
+      "via": "BP-5002",
       "titulo": "REFORÇAMENT DE FERM. Calçada restringida (Obres)",
       "descripcion": "BP-5002 | VALLROMANES | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 6-14.1 | 08:41",
       "estado": "amarillo"
@@ -197,19 +203,13 @@
     {
       "via": "BP-5002",
       "titulo": "NETEJA. Calçada restringida (Obres)",
-      "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a HORARI: 7 a 15h   i   22 a 6h | Punt km. 1.5-15.9 | 07:00",
-      "estado": "amarillo"
-    },
-    {
-      "via": "BP-5002",
-      "titulo": "CONSTRUCCIÓ DE ROTONDA. Calçada restringida (Obres)",
-      "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a ACCÉS C-32 | Punt km. 1.5-1.8 | 10:37",
+      "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 1.5-10.5 | 09:00",
       "estado": "amarillo"
     },
     {
       "via": "BP-5002",
       "titulo": "NETEJA. Calçada restringida (Obres)",
-      "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a HORARI: 7 a 15h | Punt km. 1.5-10.5 | 09:00",
+      "descripcion": "BP-5002 | ALELLA | Sentit Ambdós sentits cap a HORARI: 7 a 15h   i   22 a 6h | Punt km. 1.5-15.9 | 07:00",
       "estado": "amarillo"
     },
     {
@@ -226,15 +226,15 @@
     },
     {
       "via": "BV-1604",
-      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
-      "descripcion": "BV-1604 | LLIÇÀ DE VALL | Sentit Ambdós sentits | Punt km. 2.5-2.7 | 21:38",
-      "estado": "amarillo"
-    },
-    {
-      "via": "BV-1604",
       "titulo": "MANTENIMENT DE PONTS. Calçada tallada (Obres)",
       "descripcion": "BV-1604 | PARETS DEL VALLÈS | Sentit Ambdós sentits | Punt km. 0.1-0.3 | 08:00",
       "estado": "rojo"
+    },
+    {
+      "via": "BV-1604",
+      "titulo": "ESTABILITZACIÓ DE TALÚS. Calçada restringida (Obres)",
+      "descripcion": "BV-1604 | LLIÇÀ DE VALL | Sentit Ambdós sentits | Punt km. 2.5-2.7 | 21:38",
+      "estado": "amarillo"
     },
     {
       "via": "BV-2122",
